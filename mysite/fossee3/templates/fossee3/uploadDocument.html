@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <form id='file-catcher' enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <input id='title' name="title" type="text"><br><br>
+        <textarea rows="10" cols="50" id='description' name="description" type="text">
+        </textarea>
+        <br><br>
+
+        <input id='inputDocument' name="document" type="file" multiple /><br><br><br>
+
+        <br><br><br>
+        <button type="submit">
+            submit
+        </button>
+    </form>
+
+
+</body>
+<script src="{% static 'fossee3/ajax.js' %}"></script>
+
+</html>
