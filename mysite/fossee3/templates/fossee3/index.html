@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>front_page</title>
+    <title>FOSSEE</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -15,23 +15,24 @@
     <link rel="stylesheet" type="text/css" href="{% static "fossee3/index.css" %}">
     <script src="{% static "fossee3/topnav.js" %}"></script>
 </head>
+
 <body>
     <div class="cursive">
         <br>
-        <div>Hi there ! Welcome to our first ever sharing platform for codes , happy coding nitkians .</div><br>Web Club
-        NITK <br><br>
-        <a href="https://www.facebook.com/web.club.nitk/" class="font"><i class="fa fa-facebook"
+        <div>When I first got into technology I didn't really understand what open source was. Once I started writing software, I realized how important this would be.</div>
+        <div > - Matt Mullenweg</div>
+        <br>IITB FOSSEE Summer Fellowship 2019.<br>
+        <a href="https://www.facebook.com/FOSSEENMEICT/" class="font"><i class="fa fa-facebook"
                 style="font-size:25px  ; height: 30px; width: 30px;"></i> </a>
 
-        <a href="https://github.com/WebClub-NITK" class="font"><i class="fa fa-github"
+        <a href="https://github.com/FOSSEE/" class="font"><i class="fa fa-github"
                 style="font-size:25px  ; height: 30px; width: 30px;"></i></a>
-
-
     </div>
 
-    <div class="container" style="text-align: center"> <a href="{% url "fossee3:uploadDocument" %}"
+    <div class="container" style="text-align: center ; margin-top:50px"> <a href="{% url "fossee3:uploadDocument" %}"
             class="btn btn-primary">go to application</a></div><br><br><br>
 
+    <!-- top navigation bar begins         -->
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
@@ -44,23 +45,21 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li> <a href="#!" class="active" onclick="callhowitstarted()">how it started</a> </li>
-                    <li> <a href="#!" class="dropdown" onclick="callwhywebclub()">why_web_club</a></li>
-                    <li> <a href="#!" onclick="callcontact()">Contact me</a></li>
+                    <li> <a href="#!" class="dropdown" onclick="callwhyfossee()">why-fossee</a></li>
+                    <li> <a href="#!" onclick="callcontact()">My details</a></li>
                 </ul>
             </div>
     </nav>
+    <!-- top navigation bar ends -->
+
     <div class="container">
         <div class="main_content" style="font-family:Amethysta">
             <div id="demo">
                 <div>About this project <br><br>
-                    This web application is built on the top of django , it allows you to conveniently share your codes
-                    with anyone with just one link !
-                    <div style="text-indent: 1em">It also allows you to manage your shared code so that you can refer
-                        them whenever you need it.I
-                        would really like to know how you feel about the application , to give feedback you can contact
-                        me through contact section. </div>
-                </div>
+                    This web application is built on the top of django , developed as an assignment
+                    for fossee 2019.<br>
+                  It allows you to upload multiple slides and refer it as and when required. </div>
+
             </div>
         </div>
     </div>
