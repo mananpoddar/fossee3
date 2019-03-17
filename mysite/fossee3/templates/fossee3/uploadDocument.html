@@ -16,6 +16,7 @@
   <div class="container uploadDocuments">
     <form id='file-catcher' enctype="multipart/form-data">
         {% csrf_token %}
+        <b> Please Upload your slides here:<b><br><br>
       <div class="form-group">
         <label>Title : </label>
         <input class="form-control"id='title' name="title" type="text"><br><br>
@@ -25,6 +26,7 @@
         <br><br>
         <label>Upload slides : </label>
         <input class="form-control" id='inputDocument' name="document" type="file" multiple /><br><br><br>
+        <u id="displayFile"></u>
 
         <br><br><br>
         <button type="submit">

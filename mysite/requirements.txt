@@ -1,0 +1,4 @@
+Django==1.11
+mysqlclient
+Pillow==5.4.1
+pytz==2018.9

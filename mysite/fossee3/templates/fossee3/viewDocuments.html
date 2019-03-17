@@ -1,5 +1,6 @@
 
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +27,7 @@
   <link rel="stylesheet" href="{% static 'step/second/vendors/linericon/style.css' %}">
   <link rel="stylesheet" href="{% static 'step/second/vendors/owl-carousel/owl.theme.default.min.css' %}">
   <link rel="stylesheet" href="{% static 'step/second/vendors/owl-carousel/owl.carousel.min.css' %}">
-
+  <link rel="stylesheet" type="text/css" href="{% static "fossee3/index.css" %}">
   <link rel="stylesheet" href="{% static 'step/second/css/style.css' %}">
 </head>
 <body>
@@ -45,33 +46,42 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
             <ul class="nav navbar-nav menu_nav justify-content-center">
-              <li class="nav-item active"><a class="nav-link" href="#">Home</a></li> 
-              <li class="nav-item"><a class="nav-link" href="#">About Us</a></li> 
-              <li class="nav-item"><a class="nav-link" href="#">Contact</a>
+                <li class="nav-item active"><a class="nav-link" href="/fossee3">Home</a></li> 
+                <li class="nav-item"><a class="nav-link" href="/fossee3/uploadDocument">Upload Document</a></li> 
             </ul>
           </div> 
         </div>
       </nav>
     </div>
   </header>
+  <div class="viewDocument">
+      <label>Title :</label>
+      {{caption.title}}<br>
+      <label>Description :</label>
+      {{caption.description}}
+     </div>
+
   <!--================Header Menu Area =================-->
   <section class="blog-post-area section-margin mt-4">
     <div class="container">
      {% for obj in Document %}
             <div class="column">
-    
+                <a href="/static/fossee3/ViewerJS/index.html#/media/{{obj.document}}" class="btn">
                     <div class="post-module">
                       <div class="thumbnail">
-                        <img src="{% get_media_prefix %}{{ obj.document }}"/>
-                        <a href="/static/fossee3/ViewerJS/index.html#/media/{{obj.document}}" class="btn">Preview</a>
-                      </div>
+                        <img src="{% static "fossee3/file.png" %}"/>
+                        </div>
                       <!-- Post Content-->
+                     
                       <div class="post-content">
-                      
+                          
                         <h1 class="title">{{ caption.title }}</h1>
                         <p class="description">{{ caption.description }}</p>
+
                       </div>
+                   
                     </div>
+                  </a>
                   </div>{% endfor %}
                   
                   
