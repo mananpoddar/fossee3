@@ -23,3 +23,4 @@ pip install -r requirements.txt
 ```
 python manage.py runserver
 ```
+- request localhost:8000/fossee3
