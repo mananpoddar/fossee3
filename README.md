@@ -1,6 +1,14 @@
 # fossee3
 
-Project for IITB summer Internship Entrance
+Project for IITB summer Internship Entrance<br>
+Please see the demo video on maximum possible volume with Earphones.<br>
+
+-About the application
+
+It's an application where user is allowed to upload multiple files with ppt,pptx and pps extensions<br>
+and refer as and when required.
+
+<b> Setting up the project:</b>
 
 
 - Clone the repo
@@ -34,7 +42,8 @@ python manage.py runserver
 - request localhost:8000/fossee3
 
 <br><br>
-- Important directories and files to make your look up to the code easier
+
+<b>Important directories and files to make your look up to the code easier:</b>
 ```
 core backend logic - > fossee3/mysite/fossee3/views.py
 core frontend logic - > fossee3/mysite/fossee3/static/fossee3/ajax.js
